@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-info">TECH</span><span class="text-white">FANATIC</span></a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#deals">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#accordion">FAQs</a></li>
+                </ul>
+                <form class="d-flex me-3" role="search">
+                    <input class="me-2" type="search" id="searchInput" placeholder="Search" style="background-color: rgb(32, 32, 32); color: white;" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                    <button class="btn btn-primary mt-3 mt-lg-0" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <a href="#" class="btn btn-outline-light mt-3 mt-lg-0 ms-2" title="Shopping Cart" onclick="checkLogin()">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </nav>
+    
+        <!-- Shopping Cart Modal -->
+<?php include 'cart_modal.php'; ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Cards -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-1">
+                    <img src="PRODUCTS/Meteor 03.jpg" class="card-img-top" alt="InPlay Meteor 03 Mid Tower Black and White Tempered Glass Gaming Case">
+                    <div class="card-body">
+                        <h5 class="card-title">InPlay Meteor 03 Mid Tower Black and White Tempered Glass Gaming Case</h5>
+                        <p class="price">Price: <span style="color: red;">₱1,025.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-2">
+                    <img src="PRODUCTS/Micro ATX.jpg" class="card-img-top" alt="InPlay Wind 05 and Wind 01 Acrylic Side Panel Micro ATX Durable Tempered Glass PC Case">
+                    <div class="card-body">
+                        <h5 class="card-title">InPlay Wind 05 and Wind 01 Acrylic Side Panel Micro ATX Durable Tempered Glass PC Case</h5>
+                        <p class="price">Price: <span style="color: red;">₱555.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-3">
+                    <img src="PRODUCTS/M-ATX.jpg" class="card-img-top" alt="YGT V300 MAtx Tempered Glass Gaming PC Case White">
+                    <div class="card-body">
+                        <h5 class="card-title">YGT V300 MAtx Tempered Glass Gaming PC Case White</h5>
+                        <p class="price">Price: <span style="color: red;">₱1,195.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-4">
+                    <img src="PRODUCTS/Robin Mini.jpg" class="card-img-top" alt="Keytech Robin Mini Dual Chamber Tempered Glass Optimal Airflow Micro ATX Black and White PC Case">
+                    <div class="card-body">
+                        <h5 class="card-title">Keytech Robin Mini Dual Chamber Tempered Glass Optimal Airflow Micro ATX Black and White PC Case</h5>
+                        <p class="price">Price: <span style="color: red;">₱2,045.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-5">
+                    <img src="PRODUCTS/DarkFlash.jpg" class="card-img-top" alt="DarkFlash DB330M Micro ATX Tempred Glass Side and Front Panel Gaming PC Case Black">
+                    <div class="card-body">
+                        <h5 class="card-title">DarkFlash DB330M Micro ATX Tempred Glass Side and Front Panel Gaming PC Case Black</h5>
+                        <p class="price">Price: <span style="color: red;">₱1,455.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-6">
+                    <img src="PRODUCTS/Fantech.jpg" class="card-img-top" alt="Fantech Pulse CG71 RGB Mid Tower Case White">
+                    <div class="card-body">
+                        <h5 class="card-title">Fantech Pulse CG71 RGB Mid Tower Case White</h5>
+                        <p class="price">Price: <span style="color: red;">₱1,555.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-7">
+                    <img src="PRODUCTS/DarkFlashWhite.jpg" class="card-img-top" alt="DarkFlash DK352 Mesh ATX Tempered Glass Side Panel Gaming PC Case White">
+                    <div class="card-body">
+                        <h5 class="card-title">DarkFlash DK352 Mesh ATX Tempered Glass Side Panel Gaming PC Case White</h5>
+                        <p class="price">Price: <span style="color: red;">₱2,559.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-8">
+                    <img src="PRODUCTS/MSI MAG.jpg" class="card-img-top" alt="MSI MAG Forge 100R Mid Tower PC Case Black Support ATX / Micro ATX / Mini-ITX, Tempered Glass">
+                    <div class="card-body">
+                        <h5 class="card-title">MSI MAG Forge 100R Mid Tower PC Case Black Support ATX / Micro ATX / Mini-ITX, Tempered Glass</h5>
+                        <p class="price">Price: <span style="color: red;">₱3,635.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-9">
+                    <img src="PRODUCTS/Keytech Armor.jpg" class="card-img-top" alt="Keytech Armor Knight Series Mid Tower Gaming PC Case Black">
+                    <div class="card-body">
+                        <h5 class="card-title">Keytech Armor Knight Series Mid Tower Gaming PC Case Black</h5>
+                        <p class="price">Price: <span style="color: red;">₱1,265.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for each product -->
+    <div class="modal fade" id="cartModal-1" tabindex="-1" aria-labelledby="cartModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModal1Label">InPlay Meteor 03 Mid Tower Black and White Tempered Glass Gaming Case</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <img src="PRODUCTS/Meteor 03.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                    <div>
+                        <p>Price: <span class="price" style="color: red;">₱1,025.00</span></p>
+                        <p>The <b>Meteor 03 Mid Tower</b> Gaming Case is the ultimate choice for gamers seeking both style and performance. With its sleek black and white design and elegant tempered glass panels, this case not only showcases your components but also elevates your gaming setup to a new level of sophistication.</p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                            <button type="button" class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal-2" tabindex="-1" aria-labelledby="cartModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModal2Label">InPlay Wind 05 and Wind 01 Acrylic Side Panel Micro ATX Durable Tempered Glass PC Case</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <img src="PRODUCTS/Micro ATX.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                    <div>
+                        <p>Price: <span class="price" style="color: red;">₱555.00</span></p>
+                        <p>The <b>Wind 05 and Wind 01 Micro ATX Case</b> provides excellent airflow and a stylish look with its acrylic side panel and tempered glass. Perfect for any build!</p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                            <button type="button" class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal-3" tabindex="-1" aria-labelledby="cartModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModal3Label">YGT V300 MAtx Tempered Glass Gaming PC Case White</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <img src="PRODUCTS/M-ATX.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                    <div>
+                        <p>Price: <span class="price" style="color: red;">₱1,195.00</span></p>
+                        <p>The <b>YGT V300 MAtx Case</b> features a sleek white design with tempered glass panels, offering a stylish look while ensuring optimal cooling for your components.</p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                            <button type="button" class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal-4" tabindex="-1" aria-labelledby="cartModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModal4Label">Keytech Robin Mini Dual Chamber Tempered Glass Optimal Airflow Micro ATX Black and White PC Case</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <img src="PRODUCTS/Robin Mini.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                    <div>
+                        <p>Price: <span class="price" style="color: red;">₱2,045.00</span></p>
+                        <p>The <b>Keytech Robin Mini</b> is designed for optimal airflow, featuring a dual chamber layout and tempered glass for an aesthetic build.</p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                            <button type="button" class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal-5" tabindex="-1" aria-labelledby="cartModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModal5Label">DarkFlash DB330M Micro ATX Tempred Glass Side and Front Panel Gaming PC Case Black</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <img src="PRODUCTS/DarkFlash.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                    <div>
+                        <p>Price: <span class="price" style="color: red;">₱1,455.00</span></p>
+                        <p>The <b>DarkFlash DB330M</b> combines style and functionality, providing ample cooling with tempered glass on the sides and front.</p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                            <button type="button" class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal-6" tabindex="-1" aria-labelledby="cartModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModal6Label">Fantech Pulse CG71 RGB Mid Tower Case White</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <img src="PRODUCTS/Fantech.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                    <div>
+                        <p>Price: <span class="price" style="color: red;">₱1,555.00</span></p>
+                        <p>The <b>Fantech Pulse CG71</b> features RGB lighting and a modern design, making it perfect for gamers who want to showcase their builds.</p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                            <button type="button" class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal-7" tabindex="-1" aria-labelledby="cartModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModal7Label">DarkFlash DK352 Mesh ATX Tempered Glass Side Panel Gaming PC Case White</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <img src="PRODUCTS/DarkFlashWhite.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                    <div>
+                        <p>Price: <span class="price" style="color: red;">₱2,559.00</span></p>
+                        <p>The <b>DarkFlash DK352</b> offers a mesh design for superior airflow and an elegant white finish that complements any setup.</p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                            <button type="button" class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal-8" tabindex="-1" aria-labelledby="cartModal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModal8Label">MSI MAG Forge 100R Mid Tower PC Case Black</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <img src="PRODUCTS/MSI MAG.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                    <div>
+                        <p>Price: <span class="price" style="color: red;">₱3,635.00</span></p>
+                        <p>The <b>MSI MAG Forge 100R</b> is designed for gamers who want a spacious interior and exceptional cooling performance.</p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                            <button type="button" class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal-9" tabindex="-1" aria-labelledby="cartModal9Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModal9Label">Keytech Armor Knight Series Mid Tower Gaming PC Case Black</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <img src="PRODUCTS/Keytech Armor.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                    <div>
+                        <p>Price: <span class="price" style="color: red;">₱1,265.00</span></p>
+                        <p>The <b>Keytech Armor</b> Knight Series is built for gamers looking for strength and durability with a stylish design.</p>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                            <button type="button" class="btn btn-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

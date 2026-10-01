@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-info">TECH</span><span class="text-white">FANATIC</span></a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#deals">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#accordion">FAQs</a></li>
+                </ul>
+                <form class="d-flex me-3" role="search">
+                    <input class="me-2" type="search" id="searchInput" placeholder="Search" style="background-color: rgb(32, 32, 32); color: white;" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                    <button class="btn btn-primary mt-3 mt-lg-0" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <a href="#" class="btn btn-outline-light mt-3 mt-lg-0 ms-2" title="Shopping Cart" onclick="checkLogin()">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </nav>
+    
+        <!-- Shopping Cart Modal -->
+<?php include 'cart_modal.php'; ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Cards -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-1">
+                    <img src="PRODUCTS/Mouse1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1 Name</h5>
+                        <p class="price">Price: <span style="color: red;">₱Price1</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-2">
+                    <img src="PRODUCTS/Mouse2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2 Name</h5>
+                        <p class="price">Price: <span style="color: red;">₱Price2</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-3">
+                    <img src="PRODUCTS/Mouse3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3 Name</h5>
+                        <p class="price">Price: <span style="color: red;">₱Price3</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-4">
+                    <img src="PRODUCTS/Mouse4.jpg" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 4 Name</h5>
+                        <p class="price">Price: <span style="color: red;">₱Price4</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-5">
+                    <img src="PRODUCTS/Mouse5.jpg" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 5 Name</h5>
+                        <p class="price">Price: <span style="color: red;">₱Price5</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-6">
+                    <img src="PRODUCTS/Mouse6.jpg" class="card-img-top" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 6 Name</h5>
+                        <p class="price">Price: <span style="color: red;">₱Price6</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-7">
+                    <img src="PRODUCTS/Mouse7.jpg" class="card-img-top" alt="Product 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 7 Name</h5>
+                        <p class="price">Price: <span style="color: red;">₱Price7</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-8">
+                    <img src="PRODUCTS/mouse 8.jpg" class="card-img-top" alt="Product 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 8 Name</h5>
+                        <p class="price">Price: <span style="color: red;">₱Price8</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-9">
+                    <img src="PRODUCTS/Mouse9.jpg" class="card-img-top" alt="Product 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 9 Name</h5>
+                        <p class="price">Price: <span style="color: red;">Price9</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modals for each product -->
+<div class="modal fade" id="cartModal-1" tabindex="-1" aria-labelledby="cartModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal1Label">Fantech Maxfit 67 RGB Wired Gaming Mouse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/Mouse1.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱595.00</span></p>
+                    <p>The <b>Fantech Maxfit 67</b> is a high-performance gaming mouse with customizable RGB lighting, ergonomic design, and precise tracking for an enhanced gaming experience.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-2" tabindex="-1" aria-labelledby="cartModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal2Label">Fantech Maxfit 67 RGB Wired Gaming Mouse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/Mouse2.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱595.00</span></p>
+                    <p>The <b>Fantech Maxfit 67</b> is a high-performance gaming mouse with customizable RGB lighting, ergonomic design, and precise tracking for an enhanced gaming experience.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-3" tabindex="-1" aria-labelledby="cartModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal3Label">Fantech Maxfit 67 RGB Wired Gaming Mouse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/Mouse3.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱595.00</span></p>
+                    <p>The <b>Fantech Maxfit 67</b> is a high-performance gaming mouse with customizable RGB lighting, ergonomic design, and precise tracking for an enhanced gaming experience.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-4" tabindex="-1" aria-labelledby="cartModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal4Label">Fantech Maxfit 67 RGB Wired Gaming Mouse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/Mouse4.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱595.00</span></p>
+                    <p>The <b>Fantech Maxfit 67</b> is a high-performance gaming mouse with customizable RGB lighting, ergonomic design, and precise tracking for an enhanced gaming experience.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-5" tabindex="-1" aria-labelledby="cartModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal5Label">Fantech Maxfit 67 RGB Wired Gaming Mouse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/Mouse5.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱595.00</span></p>
+                    <p>The <b>Fantech Maxfit 67</b> is a high-performance gaming mouse with customizable RGB lighting, ergonomic design, and precise tracking for an enhanced gaming experience.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-6" tabindex="-1" aria-labelledby="cartModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal6Label">Fantech Maxfit 67 RGB Wired Gaming Mouse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/Mouse6.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱595.00</span></p>
+                    <p>The <b>Fantech Maxfit 67</b> is a high-performance gaming mouse with customizable RGB lighting, ergonomic design, and precise tracking for an enhanced gaming experience.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-7" tabindex="-1" aria-labelledby="cartModal7Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal7Label">Fantech Maxfit 67 RGB Wired Gaming Mouse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/Mouse7.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱595.00</span></p>
+                    <p>The <b>Fantech Maxfit 67</b> is a high-performance gaming mouse with customizable RGB lighting, ergonomic design, and precise tracking for an enhanced gaming experience.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-8" tabindex="-1" aria-labelledby="cartModal8Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal8Label">Fantech Maxfit 67 RGB Wired Gaming Mouse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/mouse 8.jpg 8.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱595.00</span></p>
+                    <p>The <b>Fantech Maxfit 67</b> is a high-performance gaming mouse with customizable RGB lighting, ergonomic design, and precise tracking for an enhanced gaming experience.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-9" tabindex="-1" aria-labelledby="cartModal9Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal9Label">Fantech Maxfit 67 RGB Wired Gaming Mouse</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/Mouse9.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱595.00</span></p>
+                    <p>The <b>Fantech Maxfit 67</b> is a high-performance gaming mouse with customizable RGB lighting, ergonomic design, and precise tracking for an enhanced gaming experience.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body>
+</body>
+<?php include 'footer.html'; ?>
+
+</html>

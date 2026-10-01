@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+    font-size: 2rem;
+    color: black;
+}
+.navbar {
+    background-color: rgb(32, 32, 32);
+}
+.navbar-brand:hover {
+    color: black;
+}
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.nav-link:hover {
+    color: black;
+}
+.card {
+    position: relative;
+    border: 2px solid rgb(69, 70, 70);
+    background-color: rgb(38, 38, 38);
+    color: white;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.card:hover {
+    box-shadow: 0 8px 10px rgba(62, 62, 62, 0.61);
+    transform: translateY(-5px);
+}
+.card-img-top {
+    filter: blur(0px);
+    transition: filter 0.3s ease;
+}
+.card:hover .card-img-top {
+    filter: blur(3px);
+}
+.add-to-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card:hover .add-to-cart {
+    opacity: 1;
+}
+.card .add-to-cart:hover .card-img-top {
+    filter: blur(3px); 
+}
+.line {
+    border-top: 0px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.price {
+    color: white;
+}
+.price span {
+    color: red;
+}

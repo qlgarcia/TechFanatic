@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+    font-size: 2rem;
+    color: black;
+}
+.navbar {
+    background-color: rgb(32, 32, 32);
+}
+.navbar-brand:hover {
+    color: black;
+}
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.nav-link:hover {   
+    color: black;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.about {
+    background-color: rgb(34, 34, 34);
+    margin-top: 50px;
+}
+.about-text {
+    margin-bottom: 50px;
+}
+.about-text h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.section-header.text-center.pb-5 h2 {
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.faqs {
+    font-size: 50px;
+}
+.products {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.prodcuts.section-padding {
+    margin-top: 30px;
+}
+.card.text-white.text-center.bg-dark.pb-2 {
+    transition: box-shadow 0.5s;
+    cursor: pointer;
+}
+.card.text-white.text-center.bg-dark.pb-2:hover {
+    box-shadow: 0 5px 15px black;
+}
+.btn-primary.mt-3 {
+    transition: box-shadow 1s;
+}
+.btn-primary.mt-3:hover {
+    box-shadow: 5px 10px 0;
+}
+.secondrow {
+    margin-top: 20px;
+}
+
+.w-100 {
+    height: 100vh;
+}
+.bg-dark.text-white.text-center.py-4 {
+    margin-top: 50px;
+}
+
+/* Responsive Design for Medium Screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+    .carousel-caption p {
+        width: 100%;
+    }
+}
+
+/* Responsive Design for Small Screens */
+@media only screen and (max-width: 767px) {
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+}
+
+.modal-content {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ffffff; /* White text */
+}
+
+.modal-header, .modal-footer {
+    border: none; /* Remove borders */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue button */
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
+.form-control {
+    background-color: #333333; /* Dark input background */
+    color: #ffffff; /* White text */
+    border: 1px solid #555555; /* Border color */
+}
+
+.form-control::placeholder {
+    color: #bbbbbb; /* Placeholder text color */
+}
+
+.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}

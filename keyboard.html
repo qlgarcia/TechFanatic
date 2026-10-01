@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-info">TECH</span><span class="text-white">FANATIC</span></a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#deals">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php#accordion">FAQs</a></li>
+                </ul>
+                <form class="d-flex me-3" role="search">
+                    <input class="me-2" type="search" id="searchInput" placeholder="Search" style="background-color: rgb(32, 32, 32); color: white;" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                    <button class="btn btn-primary mt-3 mt-lg-0" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <a href="#" class="btn btn-outline-light mt-3 mt-lg-0 ms-2" title="Shopping Cart" onclick="checkLogin()">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                
+            </div>
+        </div>
+    </nav>
+    
+        <!-- Shopping Cart Modal -->
+<?php include 'cart_modal.php'; ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Cards -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-1">
+                    <img src="PRODUCTS/keyboard1.jpg" class="card-img-top" alt="Keytech Armor Knight Series Mechanical Keyboard Black">
+                    <div class="card-body">
+                        <h5 class="card-title">Keytech Armor Knight Series Mechanical Keyboard Black</h5>
+                        <p class="price">Price: <span style="color: red;">₱1,265.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-2">
+                    <img src="PRODUCTS/keyboard2.jpg" class="card-img-top" alt="Fantech Pulse CG71 RGB Mechanical Keyboard White">
+                    <div class="card-body">
+                        <h5 class="card-title">Fantech Pulse CG71 RGB Mechanical Keyboard White</h5>
+                        <p class="price">Price: <span style="color: red;">₱1,555.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-3">
+                    <img src="PRODUCTS/keyboard3.jpg" class="card-img-top" alt="DarkFlash DB330M Mechanical Keyboard Black">
+                    <div class="card-body">
+                        <h5 class="card-title">DarkFlash DB330M Mechanical Keyboard Black</h5>
+                        <p class="price">Price: <span style="color: red;">₱1,455.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-4">
+                    <img src="PRODUCTS/keyboard4.jpg" class="card-img-top" alt="Logitech MX Keys S Wireless Keyboard White">
+                    <div class="card-body">
+                        <h5 class="card-title">Logitech MX Keys S Wireless Keyboard White</h5>
+                        <p class="price">Price: <span style="color: red;">₱5,300.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-5">
+                    <img src="PRODUCTS/keyboard5.jpg" class="card-img-top" alt="Epomaker TH80 Pro White">
+                    <div class="card-body">
+                        <h5 class="card-title">Epomaker TH80 Pro White</h5>
+                        <p class="price">Price: <span style="color: red;">₱5,200.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-6">
+                    <img src="PRODUCTS/keyboard6.jpg" class="card-img-top" alt="Logitech Signature K650">
+                    <div class="card-body">
+                        <h5 class="card-title">Logitech Signature K650 Black</h5>
+                        <p class="price">Price: <span style="color: red;">₱2,199.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>           
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-7">
+                    <img src="PRODUCTS/keyboard7.jpg" class="card-img-top" alt="Logitech Pebble Keys 2 K380s">
+                    <div class="card-body">
+                        <h5 class="card-title">Logitech Pebble Keys 2 K380s Black</h5>
+                        <p class="price">Price: <span style="color: red;">₱1,899.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>           
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-8">
+                    <img src="PRODUCTS/keyboard8.jpg" class="card-img-top" alt="Logitech G715">
+                    <div class="card-body">
+                        <h5 class="card-title"> Logitech G715 White </h5>
+                        <p class="price">Price: <span style="color: red;">₱9,800.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>           
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#cartModal-9">
+                    <img src="PRODUCTS/keyboard9.jpg" class="card-img-top" alt="Keychron Q5 Max">
+                    <div class="card-body">
+                        <h5 class="card-title">Keychron Q5 Max Multi-Color</h5>
+                        <p class="price">Price: <span style="color: red;">₱12,400.00</span></p>
+                        <button class="btn btn-primary add-to-cart" onclick="showAddToCartModal()">Add to Cart</button>
+                    </div>
+                </div>           
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modals for each product -->
+<div class="modal fade" id="cartModal-1" tabindex="-1" aria-labelledby="cartModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal1Label">Keytech Armor Knight Series Mechanical Keyboard Black</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/keyboard1.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱1,265.00</span></p>
+                    <p>The <b>Keytech Armor Knight Series</b> Mechanical Keyboard offers a robust build with customizable RGB lighting, perfect for gamers seeking both performance and style.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-2" tabindex="-1" aria-labelledby="cartModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal2Label">Fantech Pulse CG71 RGB Mechanical Keyboard White</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/keyboard2.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱1,555.00</span></p>
+                    <p>The <b>Fantech Pulse CG71</b> features RGB lighting and a sleek white design, making it an excellent choice for gamers who want to showcase their setup.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-3" tabindex="-1" aria-labelledby="cartModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal3Label">DarkFlash DB330M Mechanical Keyboard Black</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/keyboard3.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱1,455.00</span></p>
+                    <p>The <b>DarkFlash DB330M</b> combines style and functionality, providing a durable mechanical keyboard with customizable RGB lighting.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-4" tabindex="-1" aria-labelledby="cartModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal4Label">Logitech MX Keys S Wireless Keyboard</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/keyboard4.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱5,300.00</span></p>
+                    <p>The <b>Logitech MX Keys S Wireless Keyboard</b> we consider the Logitech MX Keys S the best everyday-use keyboard for most people. While this keyboard may not have the same performance or customization options as some gaming or enthusiast keyboards, it delivers a perfect mix of build quality, ease of use, and excellent typing quality. If you're used to typing on a laptop keyboard, you'll feel right at home since it uses the same kind of scissor switches. Each key has small dish-shaped indents that keep your fingers centered, helping to reduce typos. With its excellent wireless versatility, you can connect it using its USB receiver or pair it with up to three devices via Bluetooth. It also has white backlighting that can increase or decrease in brightness according to the lighting conditions around you..</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-5" tabindex="-1" aria-labelledby="cartModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal5Label">Epomaker TH80 Pro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/keyboard5.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱5,200.00</span></p>
+                    <p>The <b>Epomaker TH80 Pro.</b> This compact wireless keyboard has plenty going for it, including impressive build quality. You can also choose between different mechanical switch options to suit your preferences. </p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-6" tabindex="-1" aria-labelledby="cartModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal6Label">Logitech Signature K650 </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/keyboard6.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱2,199.00</span></p>
+                    <p>The <b>Logitech Signature K650 </b> fits perfectly into your daily needs at work with upgraded shortcuts and integrated palm rest. Get the comfort you need for long hours at your desk. With a spill-resistant *, easy-to-clean design and up to 36 months of battery life , you can move it conveniently and easily with no wires in the way.
+</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-7" tabindex="-1" aria-labelledby="cartModal7Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal7Label">Logitech Pebble Keys 2 K380s</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/keyboard7.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱1,899.00</span></p>
+                    <p>The <b>Logitech Pebble Keys 2 K380s</b> Is a compact wireless keyboard punches well above its price point, making it a favorite among students and on-the-go professionals. Its size makes it easy to stow in backpacks and is great for tight working spaces. You can connect it with up to three devices at once, and two AAA batteries provide an advertised battery life of up to 36 months.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-8" tabindex="-1" aria-labelledby="cartModal8Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal8Label">Logitech G715</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/keyboard8.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱9,800.00</span></p>
+                    <p>The <b>Logitech G715</b>  has excellent features that provide a comfortable and satisfying overall experience, including a cozy, cloud-shaped wrist rest for added comfort. Along the top of the keyboard, there's a suite of lavender-colored media keys and a volume wheel to make skipping through playlists a breeze. You can also easily change your connection style, switching between a paired Bluetooth device or the USB receiver.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartModal-9" tabindex="-1" aria-labelledby="cartModal9Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModal9Label">Keychron Q5 Max</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <img src="PRODUCTS/keyboard9.jpg" class="img-fluid me-4" alt="Product Image" style="max-width: 150px;">
+                <div>
+                    <p>Price: <span class="price" style="color: red;">₱12,400.00</span></p>
+                    <p>The <b>Keychron Q5 Max</b> is a custom mechanical keyboard with a 2.4 GHz wireless connection and 1000 Hz polling rate, offering premium sound quality and a double-gasket design. Crafted from 6063 aluminum, it features an ARM Cortex-M4 chip with 256K Flash for developers. The Q5 Max is easy to assemble and customize, offering seamless multitasking across devices.</p>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-primary me-2">Add to Cart</button>
+                        <button type="button" class="btn btn-success">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<?php include 'footer.html'; ?>
+
+</html>
